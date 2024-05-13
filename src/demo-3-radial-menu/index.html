@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 2 | It's not the 1990s any more | DevCon Skopje 2024</title>
+
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link href="/demo-3-radial-menu/radial-menu.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="menu">
+      <button class="menu-toggle" id="menu-toggle" popovertarget="menu-items">
+        <div aria-hidden="true">➕</div>
+        <div class="sr-only">open menu</div>
+      </button>
+      <menu class="menu-items" id="menu-items" popover anchor="menu-toggle">
+        <li class="item">
+          <button>
+            <div aria-hidden="true">♥️</div>
+            <div class="sr-only">add to favorites</div>
+          </button>
+        </li>
+        <li class="item">
+          <button>
+            <div aria-hidden="true">💾</div>
+            <div class="sr-only">save to collection</div>
+          </button>
+        </li>
+        <li class="item">
+          <button>
+            <div aria-hidden="true">🔗</div>
+            <div class="sr-only">copy link</div>
+          </button>
+        </li>
+        <li class="item">
+          <button>
+            <div aria-hidden="true">✉️</div>
+            <div class="sr-only">email</div>
+          </button>
+        </li>
+        <li class="item">
+          <button>
+            <div aria-hidden="true">🛒</div>
+            <div class="sr-only">add to cart</div>
+          </button>
+        </li>
+        <!--  Need extra close button bc the popover lays on top of the X and doesn't let you get to it    -->
+        <li class="item">
+          <button popovertargetaction="close" popovertarget="menu-items" class="hidden-close">
+            <div aria-hidden="true"></div>
+            <div class="sr-only">close menu</div>
+          </button>
+        </li>
+      </menu>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's not the 1990s any more | DevCon Skopje 2024</title>
+
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link href="/demo-2-color-mix/color-mix.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="screen">
+      <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.41 180.61">
+          <path
+            class="left"
+            d="m90.3,90.3c0-33.24,18.06-62.26,44.9-77.79C121.99,4.88,106.66.5,90.3.5,40.71.5.5,40.71.5,90.3s40.21,89.8,89.8,89.8c16.36,0,31.69-4.38,44.9-12.02-26.84-15.53-44.9-44.55-44.9-77.79Z"
+          />
+          <path
+            class="right"
+            d="m180.11.5c-16.36,0-31.69,4.38-44.9,12.02,26.84,15.53,44.9,44.55,44.9,77.79s-18.06,62.26-44.9,77.79c13.21,7.64,28.54,12.02,44.9,12.02,49.6,0,89.8-40.21,89.8-89.8S229.7.5,180.11.5Z"
+          />
+          <path
+            class="center"
+            d="m180.11,90.3c0-33.24-18.06-62.26-44.9-77.79-26.84,15.53-44.9,44.55-44.9,77.79s18.06,62.26,44.9,77.79c26.84-15.53,44.9-44.55,44.9-77.79Z"
+          />
+        </svg>
+      </div>
+      <style contenteditable="true">
+        :root {
+          --color-1: red;
+          --color-2: blue;
+          --color-mix: color-mix(in oklab, var(--color-1), var(--color-2));
+        }
+      </style>
+    </div>
+
+    <hr />
+
+    <div class="screen grid">
+      <div class="mix srgb">sRGB</div>
+      <div class="mix linear-srgb">linear-srgb</div>
+      <div class="mix hsl">HSL</div>
+      <div class="mix hwb">HWB</div>
+      <div class="mix lch">LCH</div>
+      <div class="mix oklch">OKLCH</div>
+      <div class="mix lab">LAB</div>
+      <div class="mix oklab">OKLAB</div>
+      <div class="mix xyz">XYZ</div>
+    </div>
+  </body>
+</html>

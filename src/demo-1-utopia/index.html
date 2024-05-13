@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 1 | It's not the 1990s any more | DevCon Skopje 2024</title>
+
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link href="/demo-1-utopia/utopia.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <input type="radio" value="static" name="method" id="method-static" checked />
+    <label for="method-static">Static</label>
+    <input type="radio" value="adaptive" name="method" id="method-adaptive" />
+    <label for="method-adaptive">Adaptive/Responsive</label>
+    <input type="radio" value="fluid" name="method" id="method-fluid" />
+    <label for="method-fluid">Fluid</label>
+    <div class="static container">
+      <p style="font-size: 3.8147rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 3.0518rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 2.4414rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 1.9531rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 1.5625rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 1.25rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 1rem">The five boxing wizards jump quickly</p>
+      <p style="font-size: 0.8rem">The five boxing wizards jump quickly</p>
+    </div>
+    <div class="adaptive container">
+      <p style="font-size: var(--adaptive-5)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive-4)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive-3)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive-2)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive-1)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive-0)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive--1)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--adaptive--2)">The five boxing wizards jump quickly</p>
+    </div>
+    <div class="fluid container">
+      <p style="font-size: var(--step-5)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step-4)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step-3)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step-2)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step-1)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step-0)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step--1)">The five boxing wizards jump quickly</p>
+      <p style="font-size: var(--step--2)">The five boxing wizards jump quickly</p>
+    </div>
+  </body>
+</html>

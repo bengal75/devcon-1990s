@@ -1,0 +1,98 @@
+style {
+  display: block;
+  white-space: pre-wrap;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  margin: 5rem auto;
+  border: 3px solid blue;
+}
+
+/* Venn Diagram */
+.left,
+.center,
+.right {
+  --stroke: black;
+  stroke: var(--stroke);
+}
+
+.left {
+  fill: var(--color-1);
+}
+
+.center {
+  fill: var(--color-mix);
+}
+
+.right {
+  fill: var(--color-2);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+.screen {
+  min-height: 100dvh;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+/* ---------- */
+
+@layer demo {
+  .srgb {
+    background: color-mix(in srgb, black, white);
+  }
+  .linear-srgb {
+    background: color-mix(in srgb-linear, black, white);
+  }
+  .hsl {
+    background: color-mix(in hsl, black, white);
+  }
+  .hwb {
+    background: color-mix(in hwb, black, white);
+  }
+  .lch {
+    background: color-mix(in lch, black, white);
+  }
+  .oklch {
+    background: color-mix(in oklch, black, white);
+  }
+  .lab {
+    background: color-mix(in lab, black, white);
+  }
+  .oklab {
+    background: color-mix(in oklab, black, white);
+  }
+  .xyz {
+    background: color-mix(in xyz, black, white);
+  }
+}
+
+@layer demo.support {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .mix {
+    max-inline-size: 90vw;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    color: black;
+    font-size: clamp(24px, 5vmin, 36px);
+    padding: 2ch;
+  }
+}
